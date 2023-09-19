@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <header
+      class="flex h-[4rem] w-full border-2 justify-center items-center gap-4"
+    >
+      <a class="hover:text-red-600 cursor-pointer" href="#home">Home</a>
+      <a class="hover:text-red-600 cursor-pointer" href="#about">About</a>
+      <a class="hover:text-red-600 cursor-pointer" href="#images">Images</a>
+    </header>
+
+    <main class="mb-5">
+      <div id="home" class="h-[900px] h-relative grid place-items-center place">
+        <!-- <img class="w-full blur-sm" src="../assets/young.jpg" alt="manny" /> -->
+        <h1 class="font-bold absolute top-50 text-[5rem]">
+          THE LEGEND OF <span class="text-red-600">PACQUAIO</span>
+        </h1>
+      </div>
+
+      <div
+        id="about"
+        class="flex flex-row px-10 justify-center items-center h-screen gap-10 w-full"
+      >
+        <div class="w-[45%]">
+          <img
+            class="rounded-md w-[100%]"
+            src="../assets/manny.jpg"
+            alt="manny"
+          />
+        </div>
+        <div class="w-[30%]">
+          <h1 class="font-bold uppercase text-4xl mb-5">About</h1>
+          <p>
+            Manny Pacquiao is a retired Filipino professional boxer and
+            politician. He was born on December 17, 1978, in Kibawe, Bukidnon,
+            Philippines. Pacquiao is widely regarded as one of the greatest
+            boxers of all time. He is known for his incredible speed, power, and
+            versatility in the ring.
+          </p>
+          <br />
+          <p>
+            Pacquiao began his professional boxing career in 1995 and quickly
+            gained recognition for his exceptional boxing skills. He has won
+            world titles in multiple weight classes, including flyweight,
+            featherweight, lightweight, light welterweight, welterweight, and
+            super welterweight. This accomplishment made him the first boxer in
+            history to win world championships in eight different weight
+            divisions.
+          </p>
+          <br />
+          <p>
+            Outside of boxing, Manny Pacquiao has been involved in politics. He
+            was elected as a member of the Philippine House of Representatives
+            in 2010 and later became a senator in 2016. His political career has
+            been intertwined with his status as a national hero in the
+            Philippines.
+          </p>
+        </div>
+      </div>
+      <div id="images" class="w-full flex justify-center flex-col items-center">
+        <h1 class="font-bold uppercase text-4xl mb-5">
+          Some Images of Manny Pacquiao
+        </h1>
+        <div class="carousel w-[900px] h-[700px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="../assets/young.jpg" class="w-full rounded-md" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="../assets/manny.jpg" class="w-full rounded-md" />
+
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="../assets/manny3.webp" class="w-full rounded-md" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="../assets/manny4.jpg" class="w-full rounded-md" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center h-[5rem] grid place-content-center">
+      Copyright 2023
+    </footer>
+  </body>
+</html>
